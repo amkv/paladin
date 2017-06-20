@@ -1,0 +1,7 @@
+{
+  "name": "polymer-ak",
+  "short_name": "polymer-ak",
+  "description": "Paladin code test",
+  "start_url": "/",
+  "display": "standalone"
+}
