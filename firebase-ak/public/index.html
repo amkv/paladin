@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paladin Art</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="import" href="bower_components/note-app-elements/na-elements.html">
+    <link rel="import" href="bower_components/app-storage/app-indexeddb-mirror/app-indexeddb-mirror.html">
+    <link rel="import" href="bower_components/polymerfire/polymerfire.html">
+
+    <!-- update the version number as needed -->
+    <!-- <script defer src="/__/firebase/4.1.2/firebase-app.js"></script> -->
+    <!-- include only the Firebase features as you need -->
+    <!-- <script defer src="/__/firebase/4.1.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.1.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.1.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.1.2/firebase-storage.js"></script> -->
+    <!-- initialize the SDK after all desired features are loaded -->
+    <!-- <script defer src="/__/firebase/init.js"></script> -->
+
+    <style media="screen">
+      body {margin: 0;}
+    </style>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="bower_components/web-animations-js/web-animations.min.js"></script>
+    <!-- <link rel="import" href="bower_components/platinum-sw/platinum-sw-elements.html"> -->
+    <link rel="import" href="bower_components/polymerfire/firebase-app.html">
+    <link rel="import" href="note-app.html">
+  </head>
+  <body>
+    <platinum-sw-register
+        auto-register
+        skip-waiting
+        clients-claim
+        reload-on-install
+        href="sw-import.js">
+    <platinum-sw-cache
+        default-cache-strategy="networkFirst">
+    </platinum-sw-cache>
+</platinum-sw-register>
+<firebase-app
+    name="note-app"
+    api-key="AIzaSyCrinZ5P7_JxEgXJwumbeho7vzUb10VQM0"
+    auth-domain="paladin-5cb5f.firebaseapp.com"
+    database-url="https://paladin-5cb5f.firebaseio.com">
+</firebase-app>
+<note-app></note-app>
+  </body>
+</html>
